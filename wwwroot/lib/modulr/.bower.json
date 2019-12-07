@@ -1,0 +1,36 @@
+{
+  "name": "modulr",
+  "description": "A fast and modular approach to building powerful web and mobile interfaces.",
+  "main": "modulr.js",
+  "ignore": [
+    "bower.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "frontend",
+    "ui",
+    "css3",
+    "html5",
+    "front-end",
+    "framework"
+  ],
+  "authors": [
+    "Alan Museljich"
+  ],
+  "license": "MIT",
+  "homepage": "http://decorator.io/modulr",
+  "_release": "66b9c5fcc0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "66b9c5fcc097c020feed45a81642f0f238f1212e"
+  },
+  "_source": "https://github.com/uloga/modulr.css.git",
+  "_target": "*",
+  "_originalSource": "modulr"
+}

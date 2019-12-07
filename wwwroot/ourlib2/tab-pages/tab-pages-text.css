@@ -1,0 +1,11 @@
+﻿[data-tab-content] {
+    display: none;
+    -ms-opacity: 0;
+    opacity: 0;
+}
+
+[data-tab-content-active], [data-active-tab-number="0"] ~ [data-tab-content="0"], [data-active-tab-number="1"] ~ [data-tab-content="1"], [data-active-tab-number="2"] ~ [data-tab-content="2"], [data-active-tab-number="3"] ~ [data-tab-content="3"], [data-active-tab-number="4"] ~ [data-tab-content="4"], [data-active-tab-number="5"] ~ [data-tab-content="5"], [data-active-tab-number="6"] ~ [data-tab-content="6"] {
+    display: block;
+    -ms-opacity: 1;
+    opacity: 1;
+}

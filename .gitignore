@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/obj
+/bin
+/.vs
+/Properties
+/test.txt
+/Startup.cs
+/Ryshin.Cdn.csproj.vspscc
+/Ryshin.Cdn.csproj.user
+/Ryshin.Cdn.csproj
+/Program.cs
+/ETagMiddleware.cs
+/Dockerfile.add
+/Dockerfile
+/appsettings.json
+/appsettings.Development.json
