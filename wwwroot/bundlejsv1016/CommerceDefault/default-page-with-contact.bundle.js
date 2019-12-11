@@ -1,1 +1,305 @@
-"use strict";function FileUpload(){this.InputElement=null,this.PreviewBoxElement=null,this.CurentImageBox=null,this.Form=null,this.MaxFile=null,this.StoredFiles=[],this.CurentFiles=[],this.CurentPreviewImages=[],this.Extend=function(e,t,i,n,a,l,s,r,o,c,m,d){this.InputElement=n,this.AcceptExtention=n.accept.split(","),this.PreviewBoxElement=l,this.CurentImageBox=a,this.Form=s,this.UniqueControlName=m?"CurentFilePaths":"NewFiles"+m,this.MaxFile=r||2,this.MaxFileSize=d||5242880,this.InputChangeCallBack=void 0!==o?o:null,this.InputElement.addEventListener("change",this.InputChange),(this.InputElement.fileUpload=this).FileReader=new FileReader,this.IsCreateInputName=c||!1,this.HostCdn=e||"",this.CurentFiles=t||[],this.CurentPreviewImages=i||[],this.Process()},this.Process=function(){if(this.CurentImageBox)for(var t=this,e=0;e<this.CurentFiles.length;e++){var i=this.CurentFiles[e],n=this.CurentPreviewImages[e],a=document.createElement("div");a.className="col-3 gutter-10 _p-item";var l=document.createElement("figure");l.className="_max-height-200 relative hover-children-show";var s=document.createElement("button");s.className="absolute hide tablet-show -border width-100 height-100 _fill-silver-opacity text-strong",s.innerText="CLICK ĐỂ XÓA",s.type="button",s.dataset.file=i,s.dataset.notClose="I",s.addEventListener("click",function(e){t.RemoveCurentFile(e,t.InputElement)});var r,o=i.substring(i.lastIndexOf("/")+1);if(i.type.match("image.*"))r="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' version='1'><path d='M128 0c-18 0-32 14-32 32v448c0 18 14 32 32 32h320c18 0 32-14 32-32V128L352 0H128z' fill='#e2e5e7'/><path d='M384 128h96L352 0v96c0 18 14 32 32 32z' fill='#b0b7bd'/><path fill='#cad1d8' d='M480 224l-96-96h96z'/><path d='M416 416c0 9-7 16-16 16H48c-9 0-16-7-16-16V256c0-9 7-16 16-16h352c9 0 16 7 16 16v160z' fill='#f15642'/><path d='M400 432H96v16h304c9 0 16-7 16-16v-16c0 9-7 16-16 16z' fill='#cad1d8'/><text y='375' x='212' style='line-height:1.25;text-align:center' font-weight='400' font-size='147' font-family='sans-serif' letter-spacing='0' word-spacing='0' text-anchor='middle' stroke-width='3'><tspan style='line-height:1.25;-inkscape-font-specification:'monospace Bold';text-align:center' y='375' x='212' font-weight='700' font-family='monospace' fill='#fff'>"+o.substring(o.indexOf(".")+1)+"</tspan></text></svg>";else r="<img class='_max-width-100-percent'   onerror='this.src=\"/images/shared/no-image.svg\"'   src='"+t.HostCdn+n+"' alt='"+o+"' data-file='"+o+"' /><figcaption class='padding-5 text-center _text-ellipsis'>"+o+"</figcaption>";if(t.IsCreateInputName)r+="<input type='text' class='_hidden'    name='"+t.UniqueControlName+"' value="+i+(t.Form?" form='"+t.Form.id+"'":"")+"></input>";l.innerHTML=r,l.insertBefore(s,l.childNodes[0]),a.appendChild(l),t.CurentImageBox.appendChild(a)}},this.InputChange=function(e){var s=e.target.fileUpload,t=e.target.files,i=Array.prototype.slice.call(t);s.PreviewBoxElement.innerHTML="",s.StoredFiles=[];for(var n=0;n<i.length;n++){var a=i[n];if(a.size>s.MaxFileSize)Site.NotifyFormFailed("Lỗi","File không được lớn hơn "+s.MaxFileSize/1048576+" mb");else if(s.StoredFiles.push(a),s.PreviewBoxElement===s.CurentImageBox&&(s.CurentFiles=[],s.CurentImageBox.innerHTML=""),s.StoredFiles.length+s.CurentFiles.length<=s.MaxFile){var l=new FileReader;l.onload=function(e){var t=event.target,i=document.createElement("div");i.className="gutter-10 _p-item";var n=document.createElement("figure");n.className="_max-height-200 relative hover-children-show";var a,l=document.createElement("button");(l.className="absolute hide -border width-100 height-100 _fill-silver-opacity text-strong",l.type="button",l.innerText="CLICK ĐỂ XÓA",l.dataset.file=t.name,l.dataset.notClose="I",l.addEventListener("click",function(e){s.RemoveFile(e,s.InputElement)}),t.fileType.match("image.*"))?a="<img class='width-100 _max-width-100-percent' src='"+e.target.result+"' alt='"+t.name+"' data-file='"+t.name+"' /><figcaption class='padding-5 text-center _text-ellipsis'>("+t.size%1e3+" kb) "+t.name+"</figcaption>":a="<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 512 512' version='1'><path d='M128 0c-18 0-32 14-32 32v448c0 18 14 32 32 32h320c18 0 32-14 32-32V128L352 0H128z' fill='#e2e5e7'/><path d='M384 128h96L352 0v96c0 18 14 32 32 32z' fill='#b0b7bd'/><path fill='#cad1d8' d='M480 224l-96-96h96z'/><path d='M416 416c0 9-7 16-16 16H48c-9 0-16-7-16-16V256c0-9 7-16 16-16h352c9 0 16 7 16 16v160z' fill='#f15642'/><path d='M400 432H96v16h304c9 0 16-7 16-16v-16c0 9-7 16-16 16z' fill='#cad1d8'/><text y='375' x='212' style='line-height:1.25;text-align:center' font-weight='400' font-size='147' font-family='sans-serif' letter-spacing='0' word-spacing='0' text-anchor='middle' stroke-width='3'><tspan style='line-height:1.25;-inkscape-font-specification:'monospace Bold';text-align:center' y='375' x='212' font-weight='700' font-family='monospace' fill='#fff'>"+t.name.substring(t.name.indexOf(".")+1)+"</tspan></text></svg><figcaption class='padding-5 text-center _text-ellipsis'>("+t.size%1e3+" kb) "+t.name+"</figcaption>";s.IsCreateInputName&&(a+="<input type='text' class='_hidden' name='"+s.UniqueControlName+"[]' value="+t.name+(s.Form?" form='"+s.Form.id+"'":"")+"></input>");n.innerHTML=a,n.insertBefore(l,n.childNodes[0]),i.appendChild(n),s.PreviewBoxElement.appendChild(i)},l.size=a.size,l.fileType=a.type,l.name=a.name,l.readAsDataURL(a)}}s.InputChangeCallBack&&s.InputChangeCallBack(s.StoredFiles)},this.RemoveCurentFile=function(e){for(var t=e.target.dataset.file,i=0;i<this.CurentFiles.length;i++)if(this.CurentFiles[i]===t){this.CurentFiles.splice(i,1);break}Site.FindParent(e.target,"_p-item").remove()},this.RemoveFile=function(e,t){for(var i=e.target.dataset.file,n=0;n<this.StoredFiles.length;n++)if(this.StoredFiles[n].name===i){this.StoredFiles.splice(n,1);break}Site.FindParent(e.target,"_p-item").remove(),Site.ClearInputFile(t)},this.Init=function(e,t,i,n,a,l,s,r,o,c,m,d){var h=document.querySelector(n),u=document.querySelector(l),p=document.querySelector(a),g=document.querySelector(s);null!=h&&null!=u||console.warn(n+" or "+u+": NULL"),this.Extend(e,t,i,h,p,u,g,r,o,c,m,d)}}var imageCaptcha,fileUploadNewReview,imputDocumentFile;function initContactForm(){(imageCaptcha=document.querySelector("[data-captcha-container] ._image-wrap"))&&imageCaptcha.addEventListener("click",function(e){reloadImage()})}function innitFileUpload(){var e=(imputDocumentFile=document.getElementById("inputDetailFromFile")).dataset.curentPathFiles&&""!==imputDocumentFile.dataset.curentPathFiles?[imputDocumentFile.dataset.curentPathFiles]:null,t=imputDocumentFile.dataset.curentShowingImages&&""!==imputDocumentFile.dataset.curentShowingImages?[imputDocumentFile.dataset.curentShowingImages]:null,i=imputDocumentFile.dataset.maxFile&&""!==imputDocumentFile.dataset.maxFile?+imputDocumentFile.dataset.maxFile:3,n=imputDocumentFile.dataset.maxFile&&""!==imputDocumentFile.dataset.maxSize?+imputDocumentFile.dataset.maxSize:5;(fileUploadNewReview=new FileUpload).Init(null,e,t,"#inputDetailFromFile","#newReviewContainer","#newReviewContainer","#frmContact",i,console.log("change"),!0,"DetailFormFile",n)}function clearform(){$("#frmContact")[0].reset();var e=document.getElementById("newReviewContainer");e&&(e.innerHTML="")}function reloadImage(){var e=new Date;$("#img-captcha").attr("src","/get-captcha-image?"+e.getTime())}function initMap(){var e=document.getElementById("mapContainer");if(e){var t={lat:+e.dataset.lat,lng:+e.dataset.lng},i=new google.maps.Map(document.getElementById("mapContainer"),{center:t,zoom:15,disableDefaultUI:!0});new google.maps.Marker({map:i,position:t,title:e.dataset.title})}}
+"use strict";
+
+/* * * * * * * * * * * * * * * * *
+ * LocalStorageHelper
+ * javascript page navigation
+ * * * * * * * * * * * * * * * * */
+function FileUpload() {
+    this.InputElement = null;
+    this.PreviewBoxElement = null;
+    this.CurentImageBox = null;
+    this.Form = null;
+    this.MaxFile = null;
+    this.StoredFiles = [];
+    this.CurentFiles = [];
+    this.CurentPreviewImages = [];
+    this.Extend = function (hostCdn, arrayCurentFileNames, arrayCurentPreviewImages, inputElement, curentImageBox, previewBoxEle, form, maxfile, inputChangeCallback, isCreateInputName, uniqueControlName, maxFileSize) {
+        var self = this;
+        this.InputElement = inputElement;
+        this.AcceptExtention = inputElement.accept.split(",");
+        this.PreviewBoxElement = previewBoxEle;
+        this.CurentImageBox = curentImageBox;
+        this.Form = form;
+        
+        this.UniqueControlName = (!uniqueControlName ? "NewFiles" + uniqueControlName : "CurentFilePaths") ;
+        this.MaxFile = maxfile || 2;
+        this.MaxFileSize = maxFileSize || 5*1024*1024; 
+        this.InputChangeCallBack = inputChangeCallback !== undefined ? inputChangeCallback : null;
+        this.InputElement.addEventListener("change", this.InputChange);
+        this.InputElement.fileUpload = this;
+        this.FileReader = new FileReader();
+        this.IsCreateInputName = isCreateInputName || false;
+        this.HostCdn = hostCdn || "";
+        this.CurentFiles = arrayCurentFileNames || [];
+        this.CurentPreviewImages = arrayCurentPreviewImages || [];
+        this.Process();
+    };
+
+    this.Process = function () {
+        if (!this.CurentImageBox) {
+            return;
+        }
+        var self = this;
+
+        for (let i = 0; i < this.CurentFiles.length; i++) {
+            var f = this.CurentFiles[i];
+            var reviewf = this.CurentPreviewImages[i];
+            var container = document.createElement("div");
+            container.className = "col-3 gutter-10 _p-item";
+
+            var figure = document.createElement('figure');
+            figure.className = "_max-height-200 relative hover-children-show";
+            var btn = document.createElement('button');
+
+            btn.className = "absolute hide tablet-show -border width-100 height-100 _fill-silver-opacity text-strong";
+            btn.innerText = "CLICK ĐỂ XÓA";
+            btn.type = "button";
+            btn.dataset.file = f;
+            btn.dataset.notClose = "I";
+
+            btn.addEventListener("click", function (evt) {
+                //var parentContainer = Site.FindParent(evt.target, '_p-item');
+                //parentContainer.remove();
+                self.RemoveCurentFile(evt, self.InputElement);
+            });
+
+            var fileName = f.substring(f.lastIndexOf('/') + 1);
+            var figureHtml;
+
+            if (!f.type.match("image.*")) {
+                figureHtml =
+                    "<img class='_max-width-100-percent'   onerror='this.src=\"/images/shared/no-image.svg\"'   src='" +
+                    self.HostCdn +
+                    reviewf +
+                    "' alt='" +
+                    fileName +
+                    "' data-file='" +
+                    fileName +
+                    "' /><figcaption class='padding-5 text-center _text-ellipsis'>" +
+                    fileName +
+                    "</figcaption>";
+            } else {
+                var fileExt = fileName.substring(fileName.indexOf('.') + 1);
+                figureHtml = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' version='1'><path d='M128 0c-18 0-32 14-32 32v448c0 18 14 32 32 32h320c18 0 32-14 32-32V128L352 0H128z' fill='#e2e5e7'/><path d='M384 128h96L352 0v96c0 18 14 32 32 32z' fill='#b0b7bd'/><path fill='#cad1d8' d='M480 224l-96-96h96z'/><path d='M416 416c0 9-7 16-16 16H48c-9 0-16-7-16-16V256c0-9 7-16 16-16h352c9 0 16 7 16 16v160z' fill='#f15642'/><path d='M400 432H96v16h304c9 0 16-7 16-16v-16c0 9-7 16-16 16z' fill='#cad1d8'/><text y='375' x='212' style='line-height:1.25;text-align:center' font-weight='400' font-size='147' font-family='sans-serif' letter-spacing='0' word-spacing='0' text-anchor='middle' stroke-width='3'><tspan style='line-height:1.25;-inkscape-font-specification:'monospace Bold';text-align:center' y='375' x='212' font-weight='700' font-family='monospace' fill='#fff'>" + fileExt+"</tspan></text></svg>";
+            }
+            
+
+            if (self.IsCreateInputName) {
+                var input = "<input type='text' class='_hidden'    name='" + self.UniqueControlName + "' value=" + f + (!!self.Form ? " form='" + self.Form.id + "'" : "") + "></input>";
+                figureHtml += input;
+            }
+
+            figure.innerHTML = figureHtml;
+            figure.insertBefore(btn, figure.childNodes[0]);
+            container.appendChild(figure);
+            self.CurentImageBox.appendChild(container);
+        }
+    };
+    this.InputChange = function (evt) {
+        var self = evt.target.fileUpload;
+        var files = evt.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+        self.PreviewBoxElement.innerHTML = "";
+        self.StoredFiles = [];
+
+        for (var i = 0; i < filesArr.length; i++) {
+            var f = filesArr[i];
+
+            if (f.size > self.MaxFileSize) {
+                Site.NotifyFormFailed("Lỗi", "File không được lớn hơn " + self.MaxFileSize / (1024 * 1024) + " mb");
+                continue;
+            }
+
+            self.StoredFiles.push(f);
+
+            if (self.PreviewBoxElement === self.CurentImageBox) {
+                self.CurentFiles = [];
+                self.CurentImageBox.innerHTML = "";
+            }
+
+            if (self.StoredFiles.length + self.CurentFiles.length <= self.MaxFile) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var fileReader = event.target;
+                    var container = document.createElement("div");
+                    container.className = "gutter-10 _p-item";
+
+                    var figure = document.createElement('figure');
+                    figure.className = "_max-height-200 relative hover-children-show";
+
+                    var btn = document.createElement('button');
+                    btn.className = "absolute hide -border width-100 height-100 _fill-silver-opacity text-strong";
+                    btn.type = "button";
+                    btn.innerText = "CLICK ĐỂ XÓA";
+                    btn.dataset.file = fileReader.name;
+                    btn.dataset.notClose = "I";
+
+                    btn.addEventListener("click", function (evt) {
+                        //var parentContainer = Site.FindParent(evt.target, '_p-item');
+                        //parentContainer.remove();
+                        self.RemoveFile(evt, self.InputElement);
+                    });
+                 
+                    var figureHtml;
+
+                    if (fileReader.fileType.match("image.*")) {
+                        figureHtml = "<img class='width-100 _max-width-100-percent' src='" + e.target.result + "' alt='" + fileReader.name + "' data-file='" + fileReader.name + "' /><figcaption class='padding-5 text-center _text-ellipsis'>" + "(" + fileReader.size % 1000 + " kb) " + fileReader.name + "</figcaption>";
+                    } else {
+                        var fileExt = fileReader.name.substring(fileReader.name.indexOf('.') + 1);
+                        figureHtml = "<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 512 512' version='1'><path d='M128 0c-18 0-32 14-32 32v448c0 18 14 32 32 32h320c18 0 32-14 32-32V128L352 0H128z' fill='#e2e5e7'/><path d='M384 128h96L352 0v96c0 18 14 32 32 32z' fill='#b0b7bd'/><path fill='#cad1d8' d='M480 224l-96-96h96z'/><path d='M416 416c0 9-7 16-16 16H48c-9 0-16-7-16-16V256c0-9 7-16 16-16h352c9 0 16 7 16 16v160z' fill='#f15642'/><path d='M400 432H96v16h304c9 0 16-7 16-16v-16c0 9-7 16-16 16z' fill='#cad1d8'/><text y='375' x='212' style='line-height:1.25;text-align:center' font-weight='400' font-size='147' font-family='sans-serif' letter-spacing='0' word-spacing='0' text-anchor='middle' stroke-width='3'><tspan style='line-height:1.25;-inkscape-font-specification:'monospace Bold';text-align:center' y='375' x='212' font-weight='700' font-family='monospace' fill='#fff'>" + fileExt + "</tspan></text></svg>" + "<figcaption class='padding-5 text-center _text-ellipsis'>" + "(" + fileReader.size % 1000 + " kb) " + fileReader.name + "</figcaption>";
+                    }
+
+                    if (self.IsCreateInputName) {
+                        var input = "<input type='text' class='_hidden' name='" + self.UniqueControlName + "[]' value=" + fileReader.name + (!!self.Form ? " form='" + self.Form.id + "'" : "") + "></input>";
+                        figureHtml += input;
+                    }
+
+                    figure.innerHTML = figureHtml;
+                    figure.insertBefore(btn, figure.childNodes[0]);
+                    container.appendChild(figure);
+                    self.PreviewBoxElement.appendChild(container);
+                };
+                reader.size = f.size;
+                reader.fileType = f.type;
+                reader.name = f.name;
+                reader.readAsDataURL(f);
+            }
+        }
+       
+        if (!!self.InputChangeCallBack) {
+            self.InputChangeCallBack(self.StoredFiles);
+        }
+    };
+    this.RemoveCurentFile = function (evt) {
+        var file = evt.target.dataset.file;
+        for (var i = 0; i < this.CurentFiles.length; i++) {
+            if (this.CurentFiles[i] === file) {
+                this.CurentFiles.splice(i, 1);
+                break;
+            }
+        }
+        var parentContainer = Site.FindParent(evt.target, '_p-item');
+        parentContainer.remove();
+    };
+    this.RemoveFile = function (evt, fuploadElement) {
+        var file = evt.target.dataset.file;
+
+        for (var i = 0; i < this.StoredFiles.length; i++) {
+            if (this.StoredFiles[i].name === file) {
+                this.StoredFiles.splice(i, 1);
+                break;
+            }
+        }
+        var parentContainer = Site.FindParent(evt.target, '_p-item');
+        parentContainer.remove();
+
+        //debugger;
+        //this.InputElement.addEventListener("change", this.InputChange);
+        Site.ClearInputFile(fuploadElement);
+    };
+    // init
+    this.Init = function (hostCdn, arrayCurentFileNames, arrayCurentPreviewImages, inputSelector, curentImageBoxSelector, previewBoxSelector, formSelector, maxFileCount, inputChangeCallback, isCreateInputName, uniqueControlName, maxFileSize) {
+
+        var inputEle = document.querySelector(inputSelector);
+        var previewBox = document.querySelector(previewBoxSelector);
+        var curentImageBox = document.querySelector(curentImageBoxSelector);
+        var form = document.querySelector(formSelector);
+
+        if (inputEle == null || previewBox == null) {
+            console.warn(inputSelector + " or " + previewBox + ": NULL");
+        }
+
+        this.Extend(hostCdn, arrayCurentFileNames, arrayCurentPreviewImages, inputEle, curentImageBox, previewBox, form, maxFileCount, inputChangeCallback, isCreateInputName, uniqueControlName, maxFileSize);
+    };
+};
+"use strict";
+var imageCaptcha, fileUploadNewReview, imputDocumentFile;
+
+function initContactForm() {
+    imageCaptcha = document.querySelector("[data-captcha-container] ._image-wrap");
+
+    if (!!imageCaptcha) {
+        imageCaptcha.addEventListener("click", function (e) {
+            reloadImage();
+        });
+    }
+}
+
+function innitFileUpload() {
+    //----------------
+    //----------------
+    imputDocumentFile = document.getElementById("inputDetailFromFile");
+
+    const curentImageContactFilePath = !!imputDocumentFile.dataset.curentPathFiles && imputDocumentFile.dataset.curentPathFiles !== ""
+        ? [imputDocumentFile.dataset.curentPathFiles]
+        : null;
+
+    const curentImageContactBackgroundUrl =
+        !!imputDocumentFile.dataset.curentShowingImages && imputDocumentFile.dataset.curentShowingImages !== ""
+            ? [imputDocumentFile.dataset.curentShowingImages]
+            : null;
+
+    //
+    const dataMaxFile = !!imputDocumentFile.dataset.maxFile && imputDocumentFile.dataset.maxFile !== ""
+        ? +imputDocumentFile.dataset.maxFile
+        : 3;
+    const dataMaxSize = !!imputDocumentFile.dataset.maxFile && imputDocumentFile.dataset.maxSize !== ""
+        ? +imputDocumentFile.dataset.maxSize
+        : 5;
+    //
+
+    fileUploadNewReview = new FileUpload();
+    fileUploadNewReview.Init(null,
+        curentImageContactFilePath,
+        curentImageContactBackgroundUrl,
+        "#inputDetailFromFile",//file
+        "#newReviewContainer",//review showing
+        "#newReviewContainer",//new showing
+        "#frmContact",
+        dataMaxFile,
+        console.log("change"),
+        true,
+        "DetailFormFile", dataMaxSize);//unique name
+}
+
+//contact
+function clearform() {
+    $('#frmContact')[0].reset();
+    var imageReverContainer = document.getElementById("newReviewContainer");
+
+    if (!!imageReverContainer) {
+        imageReverContainer.innerHTML = "";
+    }
+
+
+}
+
+function reloadImage() {
+    var d = new Date();
+    $("#img-captcha").attr("src", "/get-captcha-image?" + d.getTime());
+}
+
+
+function initMap() {
+    var mapContainer = document.getElementById('mapContainer');
+
+    if (!!mapContainer) {
+        var myLatLng = { lat: +mapContainer.dataset.lat, lng: +mapContainer.dataset.lng };
+
+        // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('mapContainer'), {
+            center: myLatLng,
+            zoom: 15,
+            disableDefaultUI: true
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+            map: map,
+            position: myLatLng,
+            title: mapContainer.dataset.title
+        });
+    }
+}
+//# sourceMappingURL=default-page-with-contact.bundle.js.map
