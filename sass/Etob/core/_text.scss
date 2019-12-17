@@ -1,0 +1,171 @@
+﻿@import "_variable.scss";
+
+@font-face {
+    font-family: utmavo;
+    src: url(/fonts/utmavo.woff);
+}
+._font-jura {
+    font-family: 'Oswald', sans-serif;
+}
+._font-dancing {
+    font-family: 'Oswald', 'Open Sans',sans-serif !important;
+}
+._font-utmavo {
+    font-family: 'utmavo', 'Open Sans', sans-serif !important;
+}
+._font-utmavo-bold {
+    font-family: 'utmavo', 'Open Sans', sans-serif !important;
+    font-weight:bold;
+}
+
+._font-mono-default {
+    font-family: monospace;
+}
+
+._text_truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+._text-noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+._text-header {
+    font-weight: lighter;
+    font-size: 37px;
+    line-height: 43px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+._text-ellipsis {   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+._header-session {
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+._text-sm{
+    font-size:small;
+}
+._text-x-sm {
+    font-size: smaller;
+}
+._text-xx-sm {
+    font-size: xx-small;
+}
+._text-n {
+    font-size: initial;
+}
+._line-height-n {
+    line-height:$line-height;
+}
+._line-height-x {
+    line-height: $line-height-x;
+}
+._line-height-12rem {
+    line-height: 1.2rem;
+}
+._line-height-15rem {
+    line-height: 1.5rem;
+}
+._line-height-17rem {
+    line-height: 1.7rem;
+}
+._text-x {
+    font-size: large;
+}
+._text-primary{
+    color: $primary-color;
+}
+
+._text-primary,
+._hover-text-primary:hover,
+._focus-text-primary:focus,
+._color-text-primary i:before,
+._hover-text-primary:hover i:before,
+._hover-text-primary a,
+._hover-href-text-primary a:not(.btn):hover {
+    color: $primary-color !important;
+}
+
+._text-large {
+    font-size:36px;
+}
+._white-space-normal {
+    white-space: normal;
+}
+@media (max-width: 800px) {
+    ._tablet-text-center {
+        text-align: center;
+    }
+
+    ._tablet-text-rem-250, ._tablet-text-rem-250 p {
+        font-size: 2.5rem !important;
+        line-height: 3.5rem !important;
+    }
+
+    ._tablet-text-rem-200, ._tablet-text-rem-200 p {
+        font-size: 2rem !important;
+        line-height: 2rem;
+    }
+
+    ._tablet-text-rem-150, ._tablet-text-rem-150 p {
+        font-size: 1.5rem !important;
+    }
+
+    ._tablet-text-rem-120, ._tablet-text-rem-120 p {
+        font-size: 1.2rem !important;
+    }
+
+    ._tablet-text-rem-110, ._tablet-text-rem-110 p {
+        font-size: 1.1rem !important;
+    }
+
+    ._tablet-text-rem-100, ._tablet-text-rem-100 p {
+        font-size: 1.0rem !important;
+    }
+
+    ._tablet-text-rem-95, ._tablet-text-rem-95 p {
+        font-size: 0.95rem !important;
+    }
+
+    ._tablet-text-rem-9, ._tablet-text-rem-90 p {
+        font-size: 0.9rem !important;
+    }
+
+    ._tablet-text-rem-85, ._tablet-text-rem-85 p {
+        font-size: 0.85rem !important;
+    }
+
+    ._tablet-text-rem-80, ._tablet-text-rem-80 p {
+        font-size: 0.8rem !important;
+    }
+
+    ._tablet-text-rem-75, ._tablet-text-rem-75 p {
+        font-size: 0.75rem !important;
+    }
+
+    ._tablet-text-rem-70, ._tablet-text-rem-70 p {
+        font-size: 0.7rem !important;
+    }
+
+    ._tablet-text-rem-65, ._tablet-text-rem-65 p {
+        font-size: 0.65rem !important;
+    }
+
+    ._tablet-text-rem-60, ._tablet-text-rem-60 p {
+        font-size: 0.6rem !important;
+    }
+}

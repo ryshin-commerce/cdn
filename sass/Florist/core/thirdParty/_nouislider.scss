@@ -1,0 +1,26 @@
+﻿._p-slider-item {
+    .noUi-horizontal {
+        border-radius: 0;
+        height: 10px;
+
+        .noUi-handle {
+            height: 22px;
+
+            &:before, &:after {
+                height: 8px;
+            }
+        }
+
+        .noUi-pips {
+            .noUi-marker-horizontal {
+                &.noUi-marker {
+                    height: 4px;
+                }
+
+                &.noUi-marker-large {
+                    height: 9px;
+                }
+            }
+        }
+    }
+}

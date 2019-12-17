@@ -1,0 +1,106 @@
+﻿@import '_variable.scss';
+
+@mixin arrow-box( $arrow-position: top, $arrow-size: 8px, $box-background-color: #fff, $box-border-width: 1px, $box-border-color: #000,$width: 0px, $arrowPos: 0) {
+    position: relative;
+    background: $box-background-color;
+    border: $box-border-width solid $box-border-color;
+
+    &:after, &:before {
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-width: $arrow-size;
+    }
+
+    &:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-width: ($arrow-size + ($box-border-width * 1.41421356));
+    }
+
+    @if $arrow-position == top {
+        &:after, &:before {
+            bottom: 100%;
+
+            @if($arrowPos==0) {
+                left: 50%;
+            }
+            @else {
+                left: $arrowPos;
+            }
+        }
+
+        &:after {
+            border-bottom-color: $box-background-color;
+
+            @if($arrowPos==0) {
+                margin-left: (-$arrow-size)+(-$arrow-size - $box-border-width + $width/2);
+            }
+        }
+
+        &:before {
+            border-bottom-color: $box-border-color;
+
+            @if($arrowPos==0) {
+                margin-left: (-$arrow-size - ($box-border-width * 0.91421356))+(-$arrow-size - $box-border-width + $width/2);
+            }
+        }
+    }
+
+    @if $arrow-position == right {
+        &:after, &:before {
+            left: 100%;
+            top: 50%;
+        }
+
+        &:after {
+            border-left-color: $box-background-color;
+            margin-top: (-$arrow-size);
+        }
+
+        &:before {
+            border-left-color: $box-border-color;
+            margin-top: (-$arrow-size - ($box-border-width * 1.41421356));
+        }
+    }
+
+    @if $arrow-position == bottom {
+        &:after, &:before {
+            top: 100%;
+            left: 50%;
+        }
+
+        &:after {
+            border-top-color: $box-background-color;
+            margin-left: (-$arrow-size);
+        }
+
+        &:before {
+            border-top-color: $box-border-color;
+            margin-left: (-$arrow-size - ($box-border-width * 1.41421356));
+        }
+    }
+
+    @if $arrow-position == left {
+        &:after, &:before {
+            right: 100%;
+            top: 50%;
+        }
+
+        &:after {
+            border-right-color: $box-background-color;
+            margin-top: (-$arrow-size);
+        }
+
+        &:before {
+            border-right-color: $box-border-color;
+            margin-top: (-$arrow-size - ($box-border-width * 1.41421356));
+        }
+    }
+}

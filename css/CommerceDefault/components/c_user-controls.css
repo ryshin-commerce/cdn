@@ -1,0 +1,53 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+[data-container-right] {
+  right: 0;
+  position: absolute;
+  top: 10px;
+  padding-top: 15px; }
+  [data-container-right] [data-container-user-controls] li:first-child {
+    text-align: center;
+    cursor: pointer;
+    margin-right: 40px; }
+    [data-container-right] [data-container-user-controls] li:first-child [data-user-box] {
+      position: relative;
+      background: white;
+      border: 0px solid #212121;
+      position: absolute !important;
+      overflow: scroll;
+      overflow: unset;
+      z-index: 100; }
+      [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:after, [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:before {
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none; }
+      [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-width: 9px; }
+      [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-width: 9px; }
+      [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:after, [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:before {
+        bottom: 100%;
+        left: 60px; }
+      [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:after {
+        border-bottom-color: white; }
+      [data-container-right] [data-container-user-controls] li:first-child [data-user-box]:before {
+        border-bottom-color: #212121; }
+    [data-container-right] [data-container-user-controls] li:first-child[data-avarta] {
+      /*margin-top:-2px;*/ }
+    [data-container-right] [data-container-user-controls] li:first-child p {
+      font-size: 12px; }
+  [data-container-right] [data-container-user-controls] .row {
+    margin-bottom: 0; }

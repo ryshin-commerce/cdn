@@ -1,0 +1,57 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+[data-container] [data-classification-id] {
+  position: relative;
+  border-bottom: 1px solid whitesmoke;
+  padding: 10px; }
+  [data-container] [data-classification-id] img {
+    width: 55px; }
+  [data-container] [data-classification-id] [data-container-shoppingcart-right] {
+    display: inline-block;
+    width: calc(100% - 60px);
+    vertical-align: top; }
+    [data-container] [data-classification-id] [data-container-shoppingcart-right] h5 {
+      font-size: 16px;
+      overflow: hidden;
+      padding-bottom: 5px; }
+
+[data-container] ._id-cartmodel {
+  height: 100%; }
+  [data-container] ._id-cartmodel > ul {
+    max-height: calc(100% - 152px);
+    overflow-y: auto;
+    overflow-x: hidden; }
+  [data-container] ._id-cartmodel [data-container-shopping-cart-bottom] {
+    position: absolute;
+    bottom: 0; }
+
+/*._zflyImage {
+    z-index: 1000;
+    position: fixed;
+    background: #fff;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 1s ease-in;  
+
+    &._zfly {
+        opacity: 0.2;
+        width: 47px;
+        height: 47px;
+        box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.15);
+        border-radius: 47px;
+    }
+}*/
+@media (max-height: 800px) {
+  [data-container] header {
+    padding: 10px; }
+  ._id-cartmodel > ul {
+    max-height: calc(100% - 212px); }
+  ._id-cartmodel [data-container-shopping-cart-bottom] {
+    padding-bottom: 70px; } }
+
+@media (max-height: 500px) {
+  [data-container-shopping-cart-bottom] {
+    display: none !important; } }

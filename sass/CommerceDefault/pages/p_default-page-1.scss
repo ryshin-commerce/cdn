@@ -1,0 +1,97 @@
+﻿@import '../core/_variable.scss';
+
+
+header {
+    h1 {
+        padding: 60px;
+    }
+
+    [data-box] {
+        background-color: rgba(white,0.8);
+        z-index: 1000;
+        position: relative;
+    }
+}
+
+[data-main-section] {
+    h2 {
+        line-height: 55px;
+        font-size: 36px;
+        color: rgb(26, 70, 141) !important;
+    }
+
+    [data-row-1] {
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+
+            li {
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    [data-row-2] {
+        background-size: cover;
+        -webkit-box-shadow: 0 40px 120px -20px rgba(0,0,0,.6);
+        box-shadow: 0 40px 120px -20px rgba(0,0,0,.6);
+        background-image: url('https://cdn.jsdelivr.net/gh/ryshin-commerce/img@master/images/backgrounds/1104-min.jpg');
+
+        .fa-stack {
+            font-size: 86%;
+        }
+
+        [data-address] {
+            .fa-stack {
+                vertical-align: top;
+            }
+
+            a {
+                display: inline-block;
+                width: calc(100% - 39px);
+            }
+        }
+    }
+}
+
+
+[data-contact-info] {
+    [data-info-item] {
+        padding: 5px 0;
+        position: relative;
+
+        .fa-stack-2x {
+            color: $primary-color-dark;
+        }
+
+        a {
+            color: black !important;
+
+            &:hover {
+                color: $primary-color-dark !important;
+            }
+        }
+    }
+
+    .fa-stack {
+        font-size: 85%;
+        vertical-align: middle;
+    }
+
+    a {
+        width: calc(100% - 32px);
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 1024px) {
+    [data-head] {
+        background-image: none;
+
+        &:after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+﻿
+@import '../../CommerceDefault/core/mixin.scss';
+@import '../core/_variable.scss';
+
+[data-container-right] {
+    right: 0;
+    position: absolute;
+    top: 10px;
+    padding-top: 15px;
+
+    [data-container-user-controls] {
+        li {
+            a {
+                color: white;
+            }
+
+            [data-user-nav] {
+                a {
+                    color: dodgerblue;
+                }
+            }
+
+            .fa {
+                padding: 5px;
+                font-size: 32px;
+            }
+
+            label {
+                color: white;
+            }
+        }
+
+        li:first-child {
+            text-align: center;
+            cursor: pointer;
+
+            [data-user-box] {
+                @include arrow-box(top,9px,white,0px,$primary-text-color,550px,60px);
+                position: absolute !important;
+                overflow: scroll;
+                overflow: unset;
+                z-index: 100;
+            }
+
+            &[data-avarta] {
+                /*margin-top:-2px;*/
+            }
+
+            margin-right: 20px;
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .row {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+﻿@import '../../core/_variable.scss';
+@import '../../core/mixin.scss';
+
+
+[data-container-user-controls] {
+    [data-user-box-container], [data-user-box-info-container] {
+        padding-top: 15px;
+    }
+
+    [data-user-box] {
+        @include arrow-box(top,9px,white,0px,$primary-text-color,273px,70px);
+        position: absolute !important;
+        overflow: scroll;
+        overflow: unset;
+        z-index: 100;
+        top: 13px;
+    }
+
+
+    p {
+        font-size: 12px;
+    }
+}

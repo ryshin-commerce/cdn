@@ -1,0 +1,149 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+[data-container-social] li {
+  margin-right: 3px !important; }
+
+main ._btn-back-top {
+  opacity: .4;
+  margin: 20px;
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  width: 40px !important;
+  line-height: 32px !important;
+  height: 40px !important;
+  z-index: 9;
+  font-size: 24px !important; }
+  main ._btn-back-top:hover {
+    opacity: 0.8; }
+
+[data-head] {
+  background-color: #0188CC; }
+
+[data-main-section] {
+  min-height: calc(100vh - 457px); }
+  [data-main-section] header [data-black-row] {
+    background-color: #212121;
+    text-align: center;
+    padding: 50px; }
+    [data-main-section] header [data-black-row] [category-name] {
+      display: inline-block;
+      position: relative;
+      color: white; }
+      [data-main-section] header [data-black-row] [category-name] a span {
+        position: absolute;
+        width: 200px;
+        text-align: right;
+        vertical-align: middle;
+        left: -205px;
+        top: -18px;
+        margin: 0;
+        padding: 8px 0; }
+      [data-main-section] header [data-black-row] [category-name] a span, [data-main-section] header [data-black-row] [category-name] a i {
+        padding-right: 10px; }
+      [data-main-section] header [data-black-row] [category-name] h1 {
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 60px; }
+
+[data-container-shoping-cart].visible [data-container] {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
+
+[data-container-shoping-cart] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10; }
+  [data-container-shoping-cart] [data-container] {
+    width: 340px;
+    float: right;
+    height: 100%;
+    display: block;
+    z-index: 500;
+    overflow: hidden;
+    -webkit-transition: transform .25s ease;
+    -webkit-transition: -webkit-transform .25s ease;
+    transition: -webkit-transform .25s ease;
+    -o-transition: transform .25s ease;
+    transition: transform .25s ease;
+    transition: transform .25s ease, -webkit-transform .25s ease;
+    transition: transform .25s ease,-webkit-transform .25s ease;
+    transform: translate3d(340px, 0, 0);
+    -webkit-transform: translate3d(340px, 0, 0); }
+    [data-container-shoping-cart] [data-container] [data-type-close-popup] {
+      line-height: 30px; }
+      [data-container-shoping-cart] [data-container] [data-type-close-popup] ._close-button {
+        height: 11px; }
+    [data-container-shoping-cart] [data-container] [data-cart-container] {
+      height: calc(100vh - 73px); }
+
+@media (max-width: 800px) {
+  ._p-product-widget [data-product-widget-action-container] > div {
+    height: auto;
+    display: block; }
+  [data-main-section] {
+    min-height: initial; }
+  #tawkchat-container {
+    z-index: 9 !important; } }
+
+@media (max-height: 500px) {
+  [data-container-logo] {
+    border: none !important; }
+    [data-container-logo] img {
+      display: none !important; } }
+
+@media (max-width: 1024px) {
+  header [data-black-row] {
+    padding: 20px; }
+  [data-container-mobile-nav].visible [data-container] {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  main ._btn-back-top {
+    display: none; }
+  main [data-main-section] {
+    margin-top: 54px; }
+  main [data-head] {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.19);
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.19); }
+  [data-container-mobile-nav] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10; }
+    [data-container-mobile-nav] [data-container] {
+      width: 340px;
+      float: left;
+      height: 100%;
+      display: block;
+      z-index: 500;
+      overflow: hidden;
+      background-color: #fff;
+      -webkit-transition: transform .25s ease;
+      -webkit-transition: -webkit-transform .25s ease;
+      transition: -webkit-transform .25s ease;
+      -o-transition: transform .25s ease;
+      transition: transform .25s ease;
+      transition: transform .25s ease, -webkit-transform .25s ease;
+      transition: transform .25s ease,-webkit-transform .25s ease;
+      transform: translate3d(-340px, 0, 0);
+      -webkit-transform: translate3d(-340px, 0, 0); }
+      [data-container-mobile-nav] [data-container] [data-type-close-popup] {
+        line-height: 30px; }
+        [data-container-mobile-nav] [data-container] [data-type-close-popup] ._close-button {
+          height: 11px; } }

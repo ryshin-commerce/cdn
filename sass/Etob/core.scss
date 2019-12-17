@@ -1,0 +1,20 @@
+﻿._cursor-poiter
+{
+    cursor: pointer;
+}
+
+/*@import '../commercedefault/core/_variable.scss';*/
+@import 'core/_variable.scss';
+@import '../commercedefault/core/_color.scss';
+@import '../commercedefault/core/_tag_elements.scss';
+
+@import 'core/_button.scss';
+@import '../commercedefault/core/_effect.scss';
+@import '../commercedefault/core/_space.scss';
+@import 'core/_text.scss';
+@import 'core/_common.scss';
+@import '../commercedefault/core/thirdParty/_b_lazy.scss';
+@import '../commercedefault/core/thirdParty/_modulr.scss';
+@import "../commercedefault/core/thirdparty/_nouislider.scss";
+@import "../commercedefault/core/thirdparty/_quill-snow.scss";
+@import "../commercedefault/core/thirdparty/_c3js.scss";

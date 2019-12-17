@@ -1,0 +1,149 @@
+﻿@import '../core/_variable.scss';
+
+._dock-left {
+    position: absolute;
+    height: calc(100% - 500px);
+    z-index: 10;
+}
+
+._dock-right {
+    position: absolute;
+    height: calc(100% - 500px);
+    z-index: 10;
+    right: 0;
+}
+
+//Custom noUiSlider
+._id-description{
+    img{
+        max-width:100%;
+    }
+}
+#readMore:checked {
+    + ._id-description {
+        max-height: 10000px;
+
+        ._id-readmore-container {
+            display: none;
+        }
+    }
+}
+._id-readmore-container {
+ 
+}
+._id-description {
+    max-height: 300px;
+    overflow: hidden;
+}
+._id-readmore-container {
+    width: calc(100% - 40px);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 18%, rgba(255,255,255,0) 100%);
+}
+
+fieldset._id-nouirange {
+    border: none;
+
+    .noUi-tooltip {
+        border: none;
+        top: 0;
+        padding: 0px;
+    }
+
+    .noUi-horizontal {
+        height: 4px;
+
+
+        .noUi-connects {
+            background: whitesmoke;
+
+            .noUi-connect {
+                background: orangered;
+            }
+        }
+    }
+
+    .noUi-handle {
+        height: 24px !important;
+        width: 24px !important;
+        top: -12px !important;
+        right: -12px !important;
+        box-shadow: none;
+        cursor: e-resize;
+
+        &:before, &:after {
+            display: none;
+        }
+    }
+}
+//
+
+
+
+[data-nav-section] {
+    padding-bottom: 25px;
+    [data-selector-slider]{
+        padding-left:20px;
+        padding-right:60px;
+    }
+}
+
+._id-categoryList {
+
+    label {
+        .fa-stack {
+            top: -32px;
+        }
+    }   
+}
+
+ul {
+    & > li {
+        input:checked {
+            & ~ label {
+
+                [data-name] {
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+[data-show-hide] {
+    & ~ [data-menu] {
+        display: none;
+    }
+
+    & ~ label {
+        .fa-stack {
+            -webkit-transition: -webkit-transform .6s ease-in-out;
+            transition: transform .6s ease-in-out;
+
+            .fa-angle-up {
+                line-height: 24px;
+            }
+        }
+    }
+
+
+
+
+    &:checked {
+        & ~ label {
+            .fa-stack {
+                -webkit-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+
+                .fa-circle {
+                    color: whitesmoke !important;
+                }
+            }
+        }
+
+        & ~ [data-menu] {
+            display: block;
+        }
+    }
+}

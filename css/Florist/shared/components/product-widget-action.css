@@ -1,0 +1,133 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+/*https: //codepen.io/fskirschbaum/pen/MYJNaj*/
+._p-product-widget-row {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 15px; }
+  ._p-product-widget-row [data-product-widget-image-container] {
+    text-align: center; }
+    ._p-product-widget-row [data-product-widget-image-container] img {
+      width: auto;
+      height: auto; }
+  ._p-product-widget-row [data-description] {
+    max-height: 75px;
+    overflow-y: hidden; }
+
+._p-product-widget {
+  display: inline-block;
+  position: relative;
+  width: 262px;
+  vertical-align: top;
+  height: 500px;
+  border-radius: 20px; }
+  ._p-product-widget [data-product-widget-image-container] {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden; }
+  ._p-product-widget ._badges {
+    position: absolute;
+    top: 10px;
+    left: -7px; }
+  ._p-product-widget [data-widget-bottom] {
+    text-align: center; }
+    ._p-product-widget [data-widget-bottom] [data-product-name] {
+      height: 50px; }
+      ._p-product-widget [data-widget-bottom] [data-product-name] h4 {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+        position: absolute;
+        bottom: 0;
+        width: 100%; }
+    ._p-product-widget [data-widget-bottom] [data-product-widget-action-container] [data-row1] {
+      padding: 10px;
+      text-align: center;
+      color: #FCC20D;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+    ._p-product-widget [data-widget-bottom] [data-product-widget-action-container] [data-row2] a {
+      color: black; }
+      ._p-product-widget [data-widget-bottom] [data-product-widget-action-container] [data-row2] a:hover {
+        color: #FCC20D; }
+    ._p-product-widget [data-widget-bottom] [data-product-widget-action-container] [data-row2] [data-product-id] {
+      margin: 0;
+      padding: 5px 10px; }
+    ._p-product-widget [data-widget-bottom] [data-product-widget-action-container] [data-row3] {
+      padding: 0 15px; }
+  ._p-product-widget [data-product-widget-image-container] {
+    background-image: url("https://cdn.jsdelivr.net/gh/ryshin-commerce/img@v1/icons/shap-small-min.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-color: rgba(255, 204, 0, 0.1); }
+  ._p-product-widget:hover {
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+
+._p-product-widget[data-flash-sale-large], [data-flash-sale-detail][data-flash-sale-large] {
+  width: 400px;
+  max-width: 100%; }
+  ._p-product-widget[data-flash-sale-large] [data-count], [data-flash-sale-detail][data-flash-sale-large] [data-count] {
+    font-size: inherit;
+    line-height: inherit; }
+  ._p-product-widget[data-flash-sale-large] progress[value], [data-flash-sale-detail][data-flash-sale-large] progress[value] {
+    height: 18px; }
+  ._p-product-widget[data-flash-sale-large] progress[value]::-webkit-progress-value, [data-flash-sale-detail][data-flash-sale-large] progress[value]::-webkit-progress-value {
+    min-width: 18px; }
+  ._p-product-widget[data-flash-sale-large] [data-is-hot]:before, [data-flash-sale-detail][data-flash-sale-large] [data-is-hot]:before {
+    background-image: url(/images/icons/fire-process-bar-22-min.png);
+    width: 22px;
+    height: 40px;
+    top: -7px;
+    left: -2px; }
+
+._p-product-widget [data-count], [data-flash-sale-detail] [data-count] {
+  font-size: 11px;
+  padding-top: 1px;
+  position: absolute;
+  top: 4px;
+  text-align: center;
+  width: 100%; }
+
+._p-product-widget [data-is-hot], [data-flash-sale-detail] [data-is-hot] {
+  position: relative; }
+  ._p-product-widget [data-is-hot]:before, [data-flash-sale-detail] [data-is-hot]:before {
+    /* background-color: red; */
+    background-image: url(/images/icons/fire-process-bar-15-min.png);
+    background-size: 100%;
+    /* height: 100px; */
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    top: -5px;
+    left: -1px;
+    content: ""; }
+
+._p-product-widget progress[value], [data-flash-sale-detail] progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 12px; }
+
+._p-product-widget progress[value]::-webkit-progress-bar, [data-flash-sale-detail] progress[value]::-webkit-progress-bar {
+  background-color: #fdccd9;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 2px 5px #fba0b873 inset;
+          box-shadow: 0 2px 5px #fba0b873 inset; }
+
+._p-product-widget progress[value]::-webkit-progress-value, [data-flash-sale-detail] progress[value]::-webkit-progress-value {
+  background: red;
+  min-width: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(red), to(#fcb045));
+  background: -webkit-linear-gradient(left, red 0%, #fcb045 100%);
+  background: linear-gradient(90deg, red 0%, #fcb045 100%);
+  border-radius: 20px; }
+
+@media (max-width: 1024px) {
+  [data-product-id] {
+    text-align: center; } }

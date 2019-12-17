@@ -1,0 +1,45 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+[data-container-user-controls] [data-user-box-container], [data-container-user-controls] [data-user-box-info-container] {
+  padding-top: 15px; }
+
+[data-container-user-controls] [data-user-box] {
+  position: relative;
+  background: white;
+  border: 0px solid #212121;
+  position: absolute !important;
+  overflow: scroll;
+  overflow: unset;
+  z-index: 100;
+  top: 13px; }
+  [data-container-user-controls] [data-user-box]:after, [data-container-user-controls] [data-user-box]:before {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  [data-container-user-controls] [data-user-box]:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 9px; }
+  [data-container-user-controls] [data-user-box]:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 9px; }
+  [data-container-user-controls] [data-user-box]:after, [data-container-user-controls] [data-user-box]:before {
+    bottom: 100%;
+    left: 70px; }
+  [data-container-user-controls] [data-user-box]:after {
+    border-bottom-color: white; }
+  [data-container-user-controls] [data-user-box]:before {
+    border-bottom-color: #212121; }
+
+[data-container-user-controls] p {
+  font-size: 12px; }

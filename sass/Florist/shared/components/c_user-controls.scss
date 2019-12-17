@@ -1,0 +1,43 @@
+﻿@import '../../core/mixin.scss';
+@import '../../core/_variable.scss';
+
+
+
+[data-container-user-controls] {
+  
+    > ul {
+        > li {          
+
+            &[data-avarta] {
+                [data-user-image] {
+                    position: absolute;
+                    left: -36px;
+                    top: 7px;
+                }
+            }
+
+            [data-user-box-container] {
+                left: -15px;
+                width: 350px;
+                padding-top: 15px;
+            }
+
+            [data-user-box-info-container] {
+                left: -40px;
+                width: 350px;
+                padding-top: 15px;
+            }
+        }
+
+        > li:first-child {        
+            [data-user-box] {
+                @include arrow-box(top,9px,white,0px,$primary-text-color,550px,60px);
+                position: absolute !important;
+                overflow: scroll;
+                overflow: unset;
+                z-index: 100;
+            }
+
+        }
+    }
+}

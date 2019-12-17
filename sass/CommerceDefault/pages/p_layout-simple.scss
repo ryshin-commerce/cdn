@@ -1,0 +1,33 @@
+﻿@import '../core/_variable.scss';
+
+
+[data-main-section] {
+    min-height: 100vh;
+    background-image: url('https://cdn.jsdelivr.net/gh/ryshin-commerce/img@master/images/backgrounds/wallbackgound-mini.jpg');
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+[data-main-section] {
+    ._center-tranform{
+        top:40%;
+    }
+}
+
+@media (max-width: 800px) {
+    [data-main-section] {
+        ._center-tranform {
+            top: 0;
+            position: initial;
+            left: 0;
+            transform: none;
+        }
+    }
+    .toggle {
+        width: 50px !important     
+    }
+
+}

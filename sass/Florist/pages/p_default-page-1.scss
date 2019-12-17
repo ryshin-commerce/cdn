@@ -1,0 +1,144 @@
+﻿@import '../core/_variable.scss';
+
+[data-search-bar-container] {
+    background-color: rgba(white,0.8);
+}
+[data-image-background] {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+[data-main-section] {
+    header {
+        background-color: $secondary-color-opacity;
+
+        h1 {
+            padding: 50px 0;
+            font-size: 2.5rem;
+            line-height: 4rem;
+        }
+    }
+
+
+
+    [data-nav-same-level] {
+
+        ul {
+
+            li {
+
+                a {
+                    display: block;
+                    padding: 10px 0;
+
+                    &.active {
+                        color: $primary-color-dark !important;
+                    }
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        a {
+            &.active {
+                font-weight: bold;
+            }
+
+            &:hover {
+                color: $primary-color-dark !important;
+            }
+        }
+    }
+
+    [data-contact-info] {
+        [data-info-item] {
+            padding: 5px 0;
+            position: relative;
+
+            .fa-stack-2x {
+                color: $secondary-color;
+            }
+
+            a {
+                color: black !important;
+
+                &:hover {
+                    color: $primary-color-dark !important;
+                }
+            }
+        }
+
+        .fa-stack {
+            font-size: 85%;
+            vertical-align: middle;
+        }
+
+        [data-col-right] {
+            width: calc(100% - 32px);
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    h2 {
+        line-height: 55px;
+        font-size: 36px;
+        color: $primary-color-dark !important;
+        padding: 10px 0;
+    }
+
+
+    [data-row-1] {
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+
+            li {
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    [data-row-2] {
+        background-size: cover;
+        -webkit-box-shadow: 0 40px 120px -20px rgba(0,0,0,.6);
+        box-shadow: 0 40px 120px -20px rgba(0,0,0,.6);
+        background-image: url('https://cdn.jsdelivr.net/gh/ryshin-commerce/img@master/images/backgrounds/1104-min.jpg');
+
+        .fa-stack {
+            font-size: 86%;
+        }
+
+        [data-address] {
+            .fa-stack {
+                vertical-align: top;
+            }
+
+            a {
+                display: inline-block;
+                width: calc(100% - 39px);
+            }
+        }
+    }
+
+    ._z-map-container {
+        height: 450px;
+        overflow: hidden;
+
+        #mapContainer {
+            width: 100%;
+            height: 600px;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    [data-main-section] header h1 {
+        padding: 0 0 25px;
+    }
+}

@@ -1,0 +1,27 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+[data-main-section] {
+  min-height: 100vh;
+  background-image: url("https://cdn.jsdelivr.net/gh/ryshin-commerce/img@v1/backgrounds/wallbackgound-mini.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+[data-main-section] ._center-tranform {
+  top: 40%; }
+
+@media (max-width: 800px) {
+  [data-main-section] ._center-tranform {
+    top: 0;
+    position: initial;
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  .toggle {
+    width: 50px !important; } }

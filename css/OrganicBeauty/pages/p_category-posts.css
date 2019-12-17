@@ -1,0 +1,72 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+._dock-left {
+  position: absolute;
+  height: calc(100% - 500px);
+  z-index: 10; }
+
+._dock-right {
+  position: absolute;
+  height: calc(100% - 500px);
+  z-index: 1;
+  z-index: 10; }
+
+[data-post-item] {
+  width: 370px;
+  margin-bottom: 50px;
+  margin: 0 10px; }
+
+@media (max-width: 800px) {
+  [data-post-item] {
+    width: auto; } }
+
+[data-tags] {
+  height: 120px; }
+
+[data-menu] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  [data-menu] li {
+    display: inline-block;
+    vertical-align: top; }
+  [data-menu] [data-name] {
+    text-transform: uppercase; }
+  [data-menu] .curentId {
+    font-weight: bold;
+    color: palevioletred; }
+
+._id-categoryList label .fa-stack {
+  top: -32px; }
+
+ul > li input:checked ~ label [data-name] {
+  font-weight: bold;
+  color: black; }
+
+[data-show-hide] ~ [data-menu] {
+  display: none; }
+
+[data-show-hide] ~ label .fa-stack {
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  -o-transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out; }
+  [data-show-hide] ~ label .fa-stack .fa-angle-up {
+    line-height: 24px; }
+
+[data-show-hide]:checked ~ label .fa-stack {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg); }
+  [data-show-hide]:checked ~ label .fa-stack .fa-circle {
+    color: whitesmoke !important; }
+
+[data-show-hide]:checked ~ [data-menu] {
+  display: block; }

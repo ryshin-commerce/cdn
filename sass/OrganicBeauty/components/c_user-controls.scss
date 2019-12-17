@@ -1,0 +1,41 @@
+﻿@import '../core/_variable.scss';
+@import '../core/mixin.scss';
+[data-container-right] {
+    right: 0;
+    position: absolute;
+    top: 10px; 
+
+    [data-container-user-controls] {
+
+        li:first-child {
+            text-align: center;
+            cursor: pointer;
+
+            [data-user-box] {
+                @include arrow-box(top,8px,white,1px,$silver-smoke,270px,60px);
+                position: absolute !important;
+                overflow: scroll;
+                overflow: unset;
+                z-index: 100;
+            }
+
+            &[data-avarta] {
+                max-width: 190px;
+            }
+        }
+
+        .fa {
+        }
+
+        margin-right: 10px;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+}
+

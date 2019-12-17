@@ -1,0 +1,61 @@
+﻿@import "../_variable.scss";
+
+input{
+    min-width:initial !important;
+}
+.btn.icon {
+    line-height: initial !important;
+}
+
+.slow-product, .animate-children .slow-product, .hover-animate-children .slow-product {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+
+    -webkit-transition: opacity .5s ease,transform 2s cubic-bezier(0,0,.44,1.18);
+    -webkit-transition: opacity .5s ease,-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+    transition: opacity .5s ease,-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+    transition: opacity .5s ease,transform 2s cubic-bezier(0,0,.44,1.18);
+    transition: opacity .5s ease,transform 2s cubic-bezier(0,0,.44,1.18),-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+}
+
+.hover-animate-children:hover .slow-product, .animate-children .slow-product {
+    opacity: 1;
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $silver-smoke-opa5;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $silver-smoke-opa5;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $silver-smoke-opa5;
+}
+
+
+@media (max-width: 800px) {
+    .toggle {
+        width: 40px !important;
+    }
+
+}
+

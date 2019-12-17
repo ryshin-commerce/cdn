@@ -1,0 +1,70 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+[data-menu-node] {
+  background-color: rgba(255, 204, 0, 0.76);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
+  [data-menu-node] ul {
+    position: relative; }
+    [data-menu-node] ul._z-padding-right {
+      padding-right: 250px; }
+    [data-menu-node] ul li {
+      padding: 15px; }
+      [data-menu-node] ul li a {
+        color: black; }
+      [data-menu-node] ul li:hover {
+        z-index: 1; }
+        [data-menu-node] ul li:hover a {
+          color: white;
+          -webkit-transition: all .3s;
+          -o-transition: all .3s;
+          transition: all .3s; }
+      [data-menu-node] ul li [data-child-container] {
+        left: 0;
+        top: 55px;
+        background-color: white; }
+        [data-menu-node] ul li [data-child-container] li {
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
+          padding: 0; }
+          [data-menu-node] ul li [data-child-container] li [data-child-node] {
+            position: relative;
+            padding: 10px;
+            background-color: transparent !important;
+            border-left: 2px solid transparent;
+            z-index: 1; }
+            [data-menu-node] ul li [data-child-container] li [data-child-node] [data-icon-container] {
+              width: 38px; }
+          [data-menu-node] ul li [data-child-container] li a {
+            color: #444;
+            white-space: nowrap;
+            font-size: 14px;
+            font-weight: normal; }
+          [data-menu-node] ul li [data-child-container] li [data-background-container] {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            visibility: hidden;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            opacity: 0; }
+            [data-menu-node] ul li [data-child-container] li [data-background-container] img {
+              position: absolute;
+              bottom: 0;
+              right: 0; }
+          [data-menu-node] ul li [data-child-container] li:hover [data-child-node] {
+            border-left: 2px solid #FCC20D; }
+            [data-menu-node] ul li [data-child-container] li:hover [data-child-node] a {
+              color: #FCC20D !important; }
+          [data-menu-node] ul li [data-child-container] li:hover [data-background-container] {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s; }

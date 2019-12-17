@@ -1,0 +1,60 @@
+﻿@import '../../../core/_variable.scss';
+
+._glass-item {  
+    width: 220px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;  
+}
+._glass-item {
+    ._glass-box {
+        height: 100%;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /* background-image: url(/sites/all/themes/txc_bourbon/images/optimized/frosted-glass-blog.png); */
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: solid 3px rgba(228,228,228,.46);
+            border-top-color: rgba(138,138,138,.37);
+            border-right-color: rgba(97,97,97,.211765);
+            box-shadow: inset -1px -9px 9px 1px rgba(251,251,251,.2);
+        }
+
+        ._glass-background {
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+
+        ._glass-impostor {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            filter: blur(2.0px);
+            -webkit-filter: blur(2.0px);
+            -moz-filter: blur(2.0px);
+            -o-filter: blur(2.0px);
+            -ms-filter: blur(2.0px);
+            filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2.0');
+            background: #fff;
+        }
+    }
+
+    ._glass-content {
+        position: absolute;
+        width: 90%;
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+        cursor:pointer;
+    }
+}

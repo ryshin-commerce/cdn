@@ -1,0 +1,66 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+[data-list-post-flex] [data-post-item] [data-date-squal] {
+  height: 55px;
+  width: 55px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  padding-top: 4px; }
+
+[data-list-post-flex] [data-post-item] [data-selector-image] {
+  height: 100%;
+  width: 100%; }
+  [data-list-post-flex] [data-post-item] [data-selector-image]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: opacity .7s ease;
+    -o-transition: opacity .7s ease;
+    transition: opacity .7s ease; }
+  [data-list-post-flex] [data-post-item] [data-selector-image]:hover img {
+    -ms-transform: scale(1.03);
+        transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  [data-list-post-flex] [data-post-item] [data-selector-image]:hover::after {
+    opacity: 1; }
+  [data-list-post-flex] [data-post-item] [data-selector-image] img {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+
+[data-list-post-flex] [data-post-item] [data-selector-category] {
+  position: absolute;
+  bottom: -20px;
+  left: -1px;
+  right: -1px; }
+  [data-list-post-flex] [data-post-item] [data-selector-category] a {
+    background-color: #fdd835;
+    color: #555; }
+
+[data-list-post-flex] [data-post-item] [data-header] h3 {
+  font-size: 18px;
+  line-height: 30px; }
+
+[data-list-post-flex] [data-post-item] [data-content] p {
+  padding: 20px;
+  line-height: 1.7;
+  text-align: center;
+  padding-top: 0; }
+
+[data-list-post-default] [data-post-id] {
+  width: 315px; }

@@ -1,0 +1,117 @@
+﻿@import '../core/_variable.scss';
+
+._dock-left {
+    position: absolute;
+    height: calc(100% - 500px);
+    z-index: 10;
+}
+
+._dock-right {
+    position: absolute;
+    height: calc(100% - 500px);
+    z-index: 1;
+    z-index: 10;
+}
+
+header {
+    [data-box] {
+        background-color: rgba(white,0.8);
+        z-index: 1000;
+        position: relative;
+    }
+}
+
+[data-main-section]{
+     > header{       
+        padding: 50px 0;
+    }
+}
+
+[data-background] {
+    position: absolute;
+    width: 100%;
+    max-height: 337px;
+    overflow: hidden;
+    top: 0;
+    img {
+        -webkit-filter: blur(0) brightness(46%);
+        filter: blur(0) brightness(46%);
+    }
+}
+
+._header2 {
+    border-bottom: 1px solid $silver-smoke;
+
+    h3 {
+        font-weight: bold;
+    }
+}
+
+
+[data-news-category] {
+    ul {
+        padding-left: 15px;
+        margin-left: 5px;
+
+        [data-childs] {
+            ul {
+                border-left: 1px dashed silver;
+            }
+        }
+
+        li {
+            position: relative;
+
+            [data-text] {
+                a, span {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    display: inline-block;
+                    color: black;
+
+                    &:hover, &.active {
+                        color: $primary-color-dark;
+                    }
+                }
+            }
+
+            [data-show-hide]:checked ~ label .fa-stack {
+                -webkit-transform: rotate(-180deg);
+                -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+            }
+
+            [data-show-hide]:checked ~ [data-childs].hide {
+                display: block !important;
+            }
+
+            label {
+
+
+                .fa-stack {
+                    margin-top: 7px;
+                    transition: transform .3s ease-in-out;
+                }
+
+                &:hover {
+                    i.fa-circle {
+                        color: $silver-smoke !important;
+                    }
+                }
+
+                .fa-angle-up {
+                    line-height: 29px;
+                }
+
+                &.active {
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    [data-selector-image] img {
+        height: auto;
+    }
+}

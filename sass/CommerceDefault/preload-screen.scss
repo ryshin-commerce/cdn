@@ -1,0 +1,15 @@
+﻿body._z-font-loading {
+    a, label, h1, h2, h3, h4, h5, h6, span,i {
+        color: transparent !important;
+    }
+
+    button {
+        color: transparent !important;
+    }
+
+    ::before, ::after, ::placeholder-shown {
+        color: transparent !important;
+    }
+
+    color: transparent !important;
+}

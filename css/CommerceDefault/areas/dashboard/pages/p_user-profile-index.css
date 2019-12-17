@@ -1,0 +1,19 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+._tabLoginDetail ._changeEmailBox, ._tabLoginDetail ._changePassword {
+  display: none;
+  opacity: 0;
+  height: 0; }
+
+._tabLoginDetail #chkShowChangeEmailBox:checked ~ .row .overflow-hidden ._changeEmailBox {
+  display: block;
+  opacity: 1;
+  height: auto; }
+
+._tabLoginDetail #chkShowChangePasswordBox:checked ~ .row .overflow-hidden ._changePassword {
+  display: block;
+  opacity: 1;
+  height: auto; }

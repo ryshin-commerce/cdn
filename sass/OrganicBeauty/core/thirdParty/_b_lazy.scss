@@ -1,0 +1,39 @@
+﻿.b-lazy._blazy-ani-scale {
+    opacity: 0;
+    -ms-transform: scale(3);
+    -moz-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    -ms-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.b-loaded._blazy-ani-scale {
+    opacity: 1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.b-lazy._blazy-ani-grayscale {
+    opacity: 0;  
+    -ms-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.b-loaded._blazy-ani-grayscale {
+    opacity: 1;   
+    -ms-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+img.b-loaded{
+    background-image:none !important;
+}

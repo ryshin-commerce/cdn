@@ -1,0 +1,66 @@
+﻿._cursor-poiter
+{
+    cursor: pointer;
+}
+#maskBlack {
+    display: none;
+    opacity: 0;
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    height: 1000%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity .25s ease,visibility 0s ease .25s;
+
+    &.visible {
+        display: block;
+        transition: opacity .25s ease,visibility 0s ease .25s;
+        opacity: 1 !important;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+._isSubscibed {
+    display: none;
+}
+
+[data-lity]{
+    cursor:pointer;
+}
+
+[data-subscribe-import-product] {
+    &._isSubscibed {
+        display: inline-block;
+    }
+
+    &._isSubscibedImport {
+        display: none !important;
+    }
+}
+[data-subscribe-flash-sale] {
+    &._isSubscibed {
+        display: inline-block;
+    }
+
+    &._isSubscibedFlashSale {
+        display: none !important;
+    }
+}
+
+@import 'core/_variable.scss';
+@import 'core/_color.scss';
+@import 'core/_tag_elements.scss';
+@import 'core/_common.scss';
+@import 'core/_button.scss';
+@import 'core/_effect.scss';
+@import 'core/_space.scss';
+@import 'core/_text.scss';
+@import 'core/_icon-fonts.scss';
+@import 'core/thirdParty/_b_lazy.scss';
+@import 'core/thirdParty/_modulr.scss';
+@import "core/thirdparty/_nouislider.scss";
+@import "core/thirdparty/_quill-snow.scss";
+@import "core/thirdparty/_c3js.scss";

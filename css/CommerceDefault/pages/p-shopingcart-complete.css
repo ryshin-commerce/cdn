@@ -1,0 +1,35 @@
+/*https: //www.materialpalette.com/red/light-blue*/
+/*http: //paletton.com/#uid=7030u0koVuCfdHJkrz6tQr5vtle*/
+/*$bg-color: #e9ebee;*/
+/*$text-blue: #4b98c8;*/
+/*$gray-border-color: rgba(0,0,0,.2);*/
+div.awesomplete {
+  width: 100% !important; }
+
+._p-payment-1, ._p-payment-2 {
+  height: 0;
+  max-height: 0;
+  -webkit-animation: all 0.5 ease-in-out;
+          animation: all 0.5 ease-in-out;
+  padding: 0;
+  border: none;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.showPayment1 ._p-payment-1 {
+  height: auto;
+  max-height: initial;
+  -webkit-animation: all 0.5 ease-in-out;
+          animation: all 0.5 ease-in-out;
+  padding: 20px;
+  opacity: 1; }
+
+.showPayment2 ._p-payment-2 {
+  height: auto;
+  max-height: initial;
+  -webkit-animation: all 0.5 ease-in-out;
+          animation: all 0.5 ease-in-out;
+  padding: 20px;
+  opacity: 1; }
