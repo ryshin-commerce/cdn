@@ -1,1 +1,62 @@
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" cursor="pointer" viewBox="0 0 60 60"><svg height="60" width="60"><g fill-rule="evenodd" fill="none"><circle r="30" cy="30" cx="30" fill="#fa3c4c"/><svg y="10" x="10"><path d="M20 0c11.3 0 20 8.3 20 19.4 0 11.1-8.7 19.4-20 19.4-2 0-4-.3-5.8-.8l-1 .1-4 1.8c-1 .4-2.2-.3-2.3-1.5V35c-.1-.4-.3-.9-.6-1.2A19 19 0 010 19.4C0 8.3 8.7 0 20 0zM8 25c-.6 1 .5 2 1.4 1.3l6.3-4.8c.4-.3 1-.3 1.4 0l4.7 3.5a3 3 0 004.3-.8l6-9.3c.5-.9-.6-1.9-1.5-1.2l-6.3 4.8c-.4.3-1 .3-1.4 0L18.2 15a3 3 0 00-4.3.8l-6 9.3z" fill="#FFF"/></svg></g></svg></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="messenger-icon-min.svg"
+   id="svg12"
+   version="1.1"
+   viewBox="0 0 60 60"
+   cursor="pointer">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg12"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="49.31672"
+     inkscape:cx="-23.765811"
+     inkscape:zoom="5.008673"
+     showgrid="false"
+     id="namedview14"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <svg
+     height="100%"
+     width="100%"
+     id="svg6"
+     version="1.1"
+     x="10"
+     y="10"
+     style="fill:none;fill-rule:evenodd">
+    <path
+       id="path4"
+       fill="#ffffff"
+       d="m 20,0 c 11.3,0 20,8.3 20,19.4 0,11.1 -8.7,19.4 -20,19.4 -2,0 -4,-0.3 -5.8,-0.8 l -1,0.1 -4,1.8 C 8.2,40.3 7,39.6 6.9,38.4 V 35 C 6.8,34.6 6.6,34.1 6.3,33.8 A 19,19 0 0 1 0,19.4 C 0,8.3 8.7,0 20,0 Z M 8,25 c -0.6,1 0.5,2 1.4,1.3 l 6.3,-4.8 c 0.4,-0.3 1,-0.3 1.4,0 l 4.7,3.5 a 3,3 0 0 0 4.3,-0.8 l 6,-9.3 C 32.6,14 31.5,13 30.6,13.7 l -6.3,4.8 c -0.4,0.3 -1,0.3 -1.4,0 L 18.2,15 a 3,3 0 0 0 -4.3,0.8 l -6,9.3 z" />
+  </svg>
+</svg>
