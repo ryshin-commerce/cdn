@@ -1,0 +1,1 @@
+"use strict";function initVoucher(){var e=document.querySelector("[data-generate-barcode]");e&&new QRCode(e,{text:e.dataset.generateBarcode,width:64,height:64,colorDark:"#000000",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.L})}document.addEventListener("DOMContentLoaded",function(){initVoucher()});
