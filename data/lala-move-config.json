@@ -1,0 +1,191 @@
+﻿[
+  {
+    "locateName": "VN SGN",
+    "locationId": "202",
+    "services": [
+      {
+        "serviceType": "MOTORCYCLE",
+        "serviceDescription": "Hàng hóa nhỏ nhẹ dưới 50kg",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+       
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": "PURCHASE_SERVICE_1"
+          },
+          {
+            "minValue": 1000000,
+            "maxValue": 2000000,
+            "specialRequestName": "PURCHASE_SERVICE_2"
+          },
+          {
+            "minValue": 1000000,
+            "maxValue": 3000000,
+            "specialRequestName": "PURCHASE_SERVICE_3"
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000,
+            "deliveryItemName": "LESS_THAN_10_KG"
+          },
+          {
+            "minValue": 10000,
+            "maxValue": 30000,
+            "deliveryItemName": "10_KG_TO_30_KG"
+          },
+          {
+            "minValue": 30000,
+            "maxValue": 50000,
+            "deliveryItemName": "30_KG_TO_50_KG"
+          },
+          {
+            "minValue": 50000,
+            "maxValue": 100000,
+            "deliveryItemName": "30_KG_TO_50_KG",
+            "specialRequestName": "EXTRA_CAPACITY"
+          }
+        ]
+      },
+      {
+        "serviceType": "LD_PICKUP_TRUCK",
+        "serviceDescription": "Tất cả các khung giờ, tối đa 500kg",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 500000,
+            "specialRequestName": "MOVING_SERVICE"
+          }
+        ]
+      },
+      {
+        "serviceType": "LD_TRUCK_1000",
+        "serviceDescription": "Ngoài khung giờ 6H-9H & 16H-20H, tối đa 1 tấn",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 1000000,
+            "specialRequestName": "MOVING_SERVICE"
+          }
+        ]
+      },
+      {
+        "serviceType": "LD_TRUCK_500",
+        "serviceDescription": "Ngoài khung giờ 6H-9H & 16H-20H, tối đa 500kg",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 500000,
+            "specialRequestName": "MOVING_SERVICE"
+          }
+        ]
+      },
+      {
+        "serviceType": "LD_VAN_1000",
+        "serviceDescription": "Tất cả khung giờ, tối đa 1 tấn",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 1000000,
+            "specialRequestName": "MOVING_SERVICE"
+          }
+        ]
+      },
+      {
+        "serviceType": "LD_VAN_500",
+        "serviceDescription": "Tất cả khung giờ, tối đa 500kg",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 500000,
+            "specialRequestName": "MOVING_SERVICE"
+          }
+        ]
+      },
+      {
+        "serviceType": "PICK_UP_TRUCK",
+        "serviceDescription": "Tất cả khung giờ, tối đa 500kg",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 500000,
+            "specialRequestName": "MOVING_SERVICE_1"
+          }
+        ]
+      },
+      {
+        "serviceType": "TRUCK175",
+        "serviceDescription": "Ngoài khung giờ 6H-9H & 16H-20H, tối đa 500kg",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 500000,
+            "specialRequestName": "MOVING_SERVICE_1"
+          }
+        ]
+      },
+      {
+        "serviceType": "TRUCK330",
+        "serviceDescription": "Ngoài khung giờ 6H-9H & 16H-20H, tối đa 1 tấn",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 1000000,
+            "specialRequestName": "MOVING_SERVICE_1"
+          }
+        ]
+      },
+      {
+        "serviceType": "VAN",
+        "serviceDescription": "Tất cả khung giờ, tối đa 500kg",
+        "categorieNames": [ "FOOD" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 100000,
+            "maxValue": 1000000,
+            "specialRequestName": "MOVING_SERVICE_1"
+          }
+        ]
+      }
+
+    ]
+  }
+]
