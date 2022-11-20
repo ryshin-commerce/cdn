@@ -1,0 +1,582 @@
+﻿[
+  {
+    "locateName": "SGN",
+    "locationId": "202",
+    "services": [
+      {
+        "enable": true,
+        "managementOnly": true,
+        "serviceType": "SGN-BIKE",
+        "serviceName": "Siêu tốc",
+        "serviceDescription": "Giao hàng trong 1h",
+        "categorieNames": [ "Corporation - Cake" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 2000000,
+            "specialRequestName": ""
+          },
+          {
+            "minValue": 2000000,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "requests": [
+          {
+            "name": "SGN-BIKE-THERMALBAG",
+            "enable": false,
+            "tier": "",
+            "price": 0,
+            "description": "Túi giữ nhiệt"
+
+          },
+          {
+            "name": "SGN-BIKE-TIP",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế (PER_UNIT)",
+            "enable": false
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_1"
+          },
+          {
+            "minValue": 30000,
+            "maxValue": 40000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_2"
+          },
+          {
+            "minValue": 40000,
+            "maxValue": 60000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_3"
+          },
+          {
+            "minValue": 60000,
+            "maxValue": 80000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_4"
+          },
+          {
+            "minValue": 80000,
+            "maxValue": 100000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_MAX"
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "managementOnly": true,
+        "serviceType": "SGN-BIKE-MATRIX",
+        "serviceName": "Siêu tốc",
+        "serviceDescription": "Giao hàng trong 1h",
+        "categorieNames": [ "Corporation - Cake" ],
+        "handlingInstructions": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 500000,
+            "specialRequestName": ""
+          }
+        ],
+        "requests": [],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "managementOnly": true,
+        "serviceType": "SGN-2H-PUBLIC",
+        "serviceName": "Giao hỏa tốc 2h",
+        "serviceDescription": "Nhận đơn trong 30 phút, giao hàng tối đa 2 giờ, tiết kiệm 20%",
+        "categorieNames": [ "Corporation - Cake" ],
+        "handlingInstructions": [],
+        "requests": [
+          {
+            "name": "SGN-BIKE-THERMALBAG",
+            "tier": "",
+            "price": 0,
+            "description": "Túi giữ nhiệt",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+
+          {
+            "minValue": 0,
+            "maxValue": 2000000,
+            "specialRequestName": ""
+          },
+          {
+            "minValue": 2000000,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_1"
+          },
+          {
+            "minValue": 30000,
+            "maxValue": 40000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_2"
+          },
+          {
+            "minValue": 40000,
+            "maxValue": 60000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_3"
+          },
+          {
+            "minValue": 60000,
+            "maxValue": 80000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_4"
+          },
+          {
+            "minValue": 80000,
+            "maxValue": 100000,
+            "deliveryItemName": "SGN-BIKE-BULKY",
+            "tier": "TIER_MAX"
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "managementOnly": true,
+        "serviceType": "SGN-EXPRESS",
+        "serviceName": "Siêu tốc đồ ăn",
+        "serviceDescription": "Dịch vụ Siêu tốc - Đồ ăn được thực hiện trong vòng 30 phút, được nhận tối đa 1 đơn",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-BIKE-THERMALBAG",
+            "tier": "",
+            "price": 0,
+            "description": "Túi giữ nhiệt",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+
+          {
+            "minValue": 0,
+            "maxValue": 500000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "managementOnly": true,
+        "serviceType": "SGN-POOL",
+        "serviceName": "Siêu Rẻ 2H",
+        "serviceDescription": "Dịch vụ Siêu rẻ được thực hiện trong vòng 1 tiếng 45 phút, được nhận tối đa 3 đơn hàng",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-POOL-TRANSFER-COD",
+            "tier": "",
+            "price": 0,
+            "description": "Nộp tiền thu hộ",
+            "enable": false
+          },
+          {
+            "name": "SGN-BIKE-THERMALBAG",
+            "tier": "",
+            "price": 0,
+            "description": "Túi giữ nhiệt",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+
+          {
+            "minValue": 0,
+            "maxValue": 500000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },     
+      {
+        "enable": false,
+        "managementOnly": true,
+        "serviceType": "SGN-DG",
+        "serviceName": "Đồng giá 25",
+        "minStopPoint": 4,
+        "maxStopPoint": 10,
+        "serviceDescription": "Tiết kiệm 50%, giao hàng dưới 4 tiếng",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-DG-TIP",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "managementOnly": false,
+        "serviceType": "SGN-SAMEDAY",
+        "serviceName": "Giao 4h",
+        "serviceDescription": "Giao hàng nội thành, cam kết trong 4 giờ*",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-SAMEDAY-TRANSFER-COD",
+            "tier": "",
+            "price": 0,
+            "description": "Nộp tiền thu hộ",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "managementOnly": true,
+        "serviceType": "SGN-BDG-SAMEDAY",
+        "serviceName": "Giao 4h",
+        "serviceDescription": "Giao hàng nội thành, cam kết trong 4 giờ*",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-BIKE-THERMALBAG",
+            "tier": "",
+            "price": 0,
+            "description": "Túi giữ nhiệt",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "managementOnly": true,
+        "serviceType": "SGN-DG",
+        "serviceName": "Đồng giá 25",
+        "minStopPoint": 4,
+        "maxStopPoint": 10,
+        "serviceDescription": "Tiết kiệm 50%, giao hàng dưới 4 tiếng",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-DG-TIP",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+
+      {
+        "enable": false,
+        "managementOnly": true,
+        "serviceType": "SGN-2H",
+        "serviceName": "Hỏa tốc 2h",
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "serviceDescription": "Giao hàng nội thành, cam kết trong 2 giờ",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-2H-TRANSFER-COD",
+            "tier": "",
+            "price": 0,
+            "description": "Nộp tiền thu hộ",
+            "enable": false
+          },
+          {
+            "name": "SGN-2H-TIP",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "managementOnly": true,
+        "serviceType": "SGN-4H",
+        "serviceName": "Hỏa tốc 4h",
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "serviceDescription": "Giao hàng nội thành, cam kết trong 2 giờ",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "managementOnly": true,
+        "serviceType": "SGN-TRICYCLE",
+        "serviceName": "Xe 3 gác",
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "serviceDescription": "Thực hiện dưới 90 phút, nhận tối đa 1 đơn",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-2H-TRANSFER-COD",
+            "tier": "",
+            "price": 0,
+            "description": "Nộp tiền thu hộ",
+            "enable": false
+          },
+          {
+            "name": "SGN-2H-TIP",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+
+          {
+            "minValue": 100000,
+            "maxValue": 400000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+
+      {
+        "enable": false,
+        "managementOnly": true,
+        "serviceType": "SGN-SAMEDAY-INTERNAL",
+        "serviceName": "Tiết kiệm 4H",
+        "minStopPoint": 1,
+        "maxStopPoint": 20,
+        "serviceDescription": "Giao hàng eCommerce",
+        "categorieNames": [ "Corporation - Cake" ],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-SD-POD-TRANSFER-COD",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "managementOnly": true,
+        "serviceType": "SGN-TMDT",
+        "serviceName": "Thương Mại Điện Tử",
+        "minStopPoint": 1,
+        "maxStopPoint": 20,
+        "serviceDescription": "eCommerce",
+        "categorieNames": [ "Corporation - Cake" ],
+        "handlingInstructions": [],
+        "payment_method": [ "cash", "balance", "momo", "Zalopay" ],
+        "requests": [
+          {
+            "name": "SGN-TMDT-TRANSFER-COD",
+            "tier": "",
+            "price": 0,
+            "description": "Nộp tiền thu hộ",
+            "enable": false
+          },
+          {
+            "name": "SGN-TMDT-TIP",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 250000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "deliveryItemName": "",
+            "tier": ""
+          }
+        ]
+      }
+
+    ]
+  }
+]

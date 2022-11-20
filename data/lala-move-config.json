@@ -4,12 +4,15 @@
     "locationId": "202",
     "services": [
       {
+        "enable": true,
+        "managementOnly": false,       
+        "serviceName": "Siêu tốc",
         "serviceType": "MOTORCYCLE",
-        "serviceDescription": "Hàng hóa nhỏ nhẹ dưới 50kg",
+        "serviceDescription": "Giao siêu tốc",
         "categorieNames": [ "FOOD" ],
         "handlingInstructions": [],
         "payInfoes": [
-       
+
           {
             "minValue": 0,
             "maxValue": 1000000,
