@@ -1,0 +1,435 @@
+﻿[
+  {
+    "locateName": "SGN",
+    "pickLocationIds": [ "202" ],
+    "dropLocationIds": [ "202","205" ],
+    "services": [
+      {
+        "enable": true,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/SieuToc.jpg",
+        "managementOnly": true,
+        "serviceType": "SGN-BIKE",
+        "dropLocationIds": [ "202", "205" ],
+        "serviceName": "Siêu tốc",
+        "minStopPoint": 1,
+        "maxStopPoint": 5,
+        "scheduleMinute": 10,
+        "serviceDescription": "Giao hàng trong 1h",
+        "categorieNames": [
+          "Corporation - Cake"
+        ],
+        "handlingInstructions": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "requests": [
+          {
+            "name": "SGN-BIKE-THERMALBAG",
+            "enable": false,
+            "tier": "",
+            "description": "Túi giữ nhiệt"
+          },
+          {
+            "name": "SGN-BIKE-TIP",
+            "num": 1,
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế (PER_UNIT)",
+            "enable": false
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "specialRequestName": "",
+            "tier": ""
+          },
+          {
+            "minValue": 30000,
+            "maxValue": 40000,
+            "specialRequestName": "SGN-BIKE-BULKY",
+            "tier": "TIER_2"
+          },
+          {
+            "minValue": 40000,
+            "maxValue": 60000,
+            "specialRequestName": "SGN-BIKE-BULKY",
+            "tier": "TIER_3"
+          },
+          {
+            "minValue": 60000,
+            "maxValue": 80000,
+            "specialRequestName": "SGN-BIKE-BULKY",
+            "tier": "TIER_4"
+          },
+          {
+            "minValue": 80000,
+            "maxValue": 100000,
+            "specialRequestName": "SGN-BIKE-BULKY",
+            "tier": "TIER_MAX"
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/2h.png",
+        "managementOnly": true,
+        "serviceType": "SGN-2H-PUBLIC",
+        "dropLocationIds": [ "202", "205" ],
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 10,
+        "serviceName": "Giao hỏa tốc 2h",
+        "serviceDescription": "Nhận đơn trong 30 phút, giao hàng tối đa 2 giờ, tiết kiệm 20%",
+        "categorieNames": [
+          "Corporation - Cake"
+        ],
+        "handlingInstructions": [],
+        "requests": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "icon_url": "https://ahamoveimg.s3.ap-southeast-1.amazonaws.com/services/iconfood.png",
+        "managementOnly": true,
+        "serviceType": "SGN-EXPRESS",
+        "dropLocationIds": [ "202" ],
+        "serviceName": "Siêu tốc đồ ăn",
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 10,
+        "serviceDescription": "Dịch vụ Siêu tốc - Đồ ăn được thực hiện trong vòng 30 phút, được nhận tối đa 1 đơn",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [
+          {
+            "name": "SGN-BIKE-THERMALBAG",
+            "tier": "",
+            "price": 0,
+            "description": "Túi giữ nhiệt",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/SieuRe.jpg",
+        "managementOnly": true,
+        "serviceType": "SGN-POOL",
+        "dropLocationIds": [ "202", "205" ],
+        "serviceName": "Siêu Rẻ 2H",
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 10,
+        "serviceDescription": "Giao hàng tối đa 2 giờ, tiết kiệm 20%",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/4H.jpg",
+        "managementOnly": false,
+        "serviceType": "SGN-SAMEDAY",
+        "dropLocationIds": [ "202" ],
+        "serviceName": "Giao 4h",
+        "serviceDescription": "Giao hàng nội thành, cam kết trong 4 giờ*",
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 10,
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [
+
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/4H.jpg",
+        "managementOnly": true,
+        "serviceType": "SGN-BDG-SAMEDAY",
+        "dropLocationIds": [ "202", "205" ],
+        "serviceName": "Giao 4h",
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 10,
+        "serviceDescription": "Giao hàng nội thành, cam kết trong 4 giờ*",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [
+
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "icon_url": "https://trello-attachments.s3.amazonaws.com/5959c169ff857d53dd292999/5b73e5c38f17db297fb28c52/7db086ccc5a30461d075e8696b38bd2b/Untitled-1-01.png",
+        "managementOnly": true,
+        "serviceType": "SGN-TMDT",
+        "dropLocationIds": [ "202", "205" ],
+        "serviceName": "Thương Mại Điện Tử",
+        "minStopPoint": 1,
+        "maxStopPoint": 20,
+        "scheduleMinute": 10,
+        "serviceDescription": "eCommerce",
+        "categorieNames": [
+          "Corporation - Cake"
+        ],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [
+          {
+            "name": "SGN-TMDT-TRANSFER-COD",
+            "tier": "",
+            "price": 0,
+            "description": "Nộp tiền thu hộ",
+            "enable": false
+          },
+          {
+            "name": "SGN-TMDT-TIP",
+            "tier": "",
+            "price": 5000,
+            "description": "Hỗ trợ tài xế",
+            "enable": false
+          }
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 250000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/BaGac.jpg",
+        "managementOnly": true,
+        "serviceType": "SGN-TRICYCLE",
+        "dropLocationIds": [ "202", "205" ],
+        "serviceName": "Xe 3 gác",
+        "minStopPoint": 1,
+        "maxStopPoint": 10,
+        "scheduleMinute": 10,
+        "serviceDescription": "Thực hiện dưới 90 phút, nhận tối đa 1 đơn",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [
+
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 400000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/BaGac.jpg",
+        "managementOnly": true,
+        "serviceType": "SGN-VAN-500",
+        "dropLocationIds": [ "202", "205" ],
+        "serviceName": "Xe VAN 500kg",
+        "minStopPoint": 1,
+        "maxStopPoint": 10,
+        "scheduleMinute": 10,
+        "serviceDescription": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/Truck500_v2.png",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [
+
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 500000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": false,
+        "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/Truck500.jpg",
+        "managementOnly": true,
+        "serviceType": "SGN-TRUCK-500",
+        "dropLocationIds": [ "202", "205" ],
+        "serviceName": "Xe tải 500kg",
+        "minStopPoint": 1,
+        "maxStopPoint": 10,
+        "scheduleMinute": 10,
+        "serviceDescription": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/Truck500_v2.png",
+        "categorieNames": [],
+        "handlingInstructions": [],
+        "payment_method": [
+          "cash",
+          "balance",
+          "momo",
+          "Zalopay"
+        ],
+        "requests": [
+
+        ],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 10000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 500000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      }
+    ]
+  }
+]
