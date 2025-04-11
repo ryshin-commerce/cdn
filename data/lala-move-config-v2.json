@@ -11,7 +11,7 @@
         "serviceType": "MOTORCYCLE",
         "dropLocationIds": [ "202", "205" ],
         "minStopPoint": 1,
-        "maxStopPoint": 15,
+        "maxStopPoint": 5,
         "scheduleMinute": 10,
         "serviceDescription": "Hàng hóa nhỏ nhẹ dưới 50kg",
         "categorieNames": [ "FOOD" ],
@@ -19,18 +19,8 @@
         "payInfoes": [
           {
             "minValue": 0,
-            "maxValue": 1000000,
-            "specialRequestName": "PURCHASE_SERVICE_1"
-          },
-          {
-            "minValue": 1000000,
-            "maxValue": 2000000,
-            "specialRequestName": "PURCHASE_SERVICE_2"
-          },
-          {
-            "minValue": 2000000,
             "maxValue": 3000000,
-            "specialRequestName": "PURCHASE_SERVICE_3"
+            "specialRequestName": ""
           }
         ],
         "weightInfoes": [
@@ -41,8 +31,13 @@
           },
           {
             "minValue": 30000,
+            "maxValue": 40000,
+            "specialRequestName": "EXTRA_CAPACITY_W"
+          },
+          {
+            "minValue": 40000,
             "maxValue": 50000,
-            "specialRequestName": "EXTRA_CAPACITY"
+            "specialRequestName": "EXTRA_CAPACITY_W_EQUIPMENT"
           }
         ]
       },

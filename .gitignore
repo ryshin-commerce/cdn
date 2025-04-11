@@ -16,6 +16,7 @@
 /Dockerfile
 /appsettings.json
 /appsettings.Development.json
+/productfeeds
 /site.webmanifest
 /safari-pinned-tab.svg
 /push-service-worker.min.js
