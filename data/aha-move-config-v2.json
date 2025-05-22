@@ -76,6 +76,70 @@
         ]
       },
       {
+        "enable": true,
+        "icon_url": "https://vncdn.ahamove.com/ahamoveimg/icons/icon-service-sameprice.png",
+        "managementOnly": false,
+        "serviceType": "SGN-SAMEPRICE",
+        "dropLocationIds": [ "202" ],
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 10,
+        "serviceName": "Hỏa tốc 6H",
+        "serviceDescription": "Đồng giá",
+        "categorieNames": [
+          "Corporation - Cake"
+        ],
+        "handlingInstructions": [],
+        "requests": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
+        "enable": true,
+        "icon_url": "https://vncdn.ahamove.com/ahamoveimg/aha-service/bike-eco.png",
+        "managementOnly": false,
+        "serviceType": "SGN-ECO",
+        "dropLocationIds": [ "202", "205" ],
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 10,
+        "serviceName": "Hỏa tốc - Tiết kiệm",
+        "serviceDescription": "Giá rẻ giao trong 1h",
+        "categorieNames": [
+          "Corporation - Cake"
+        ],
+        "handlingInstructions": [],
+        "requests": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 1000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      },
+      {
         "enable": false,
         "icon_url": "https://ahamoveimg.s3-ap-southeast-1.amazonaws.com/aha-service/2h.png",
         "managementOnly": true,
