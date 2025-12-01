@@ -1,0 +1,41 @@
+﻿[
+  {
+    "locateName": "SGN",
+    "pickLocationIds": [ "202" ],
+    "dropLocationIds": [ "202","205" ],
+    "services": [
+      {
+        "enable": true,
+        "icon_url": "https://vncdn.ahamove.com/ahamoveimg/icons/icon-service-sameprice.png",
+        "managementOnly": false,
+        "serviceType": "2",
+        "dropLocationIds": [ "202", "205" ],
+        "minStopPoint": 1,
+        "maxStopPoint": 1,
+        "scheduleMinute": 5,
+        "serviceName": "SPX Instant",
+        "serviceDescription": "SPX Hỏa tốc",
+        "categorieNames": [
+
+        ],
+        "handlingInstructions": [],
+        "requests": [],
+        "payInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 5000000,
+            "specialRequestName": ""
+          }
+        ],
+        "weightInfoes": [
+          {
+            "minValue": 0,
+            "maxValue": 30000,
+            "specialRequestName": "",
+            "tier": ""
+          }
+        ]
+      }
+    ]
+  }
+]
