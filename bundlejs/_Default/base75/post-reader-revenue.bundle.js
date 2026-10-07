@@ -1,0 +1,1 @@
+(()=>{const{readerRevenueProductId:e,readerRevenueType:t}=document.querySelector("[data-reader-revenue-product-id]").dataset;(self.SWG_BASIC=self.SWG_BASIC||[]).push(d=>{d.init({type:t,isPartOfType:["Product"],isPartOfProductId:e,clientOptions:{theme:"light",lang:document.documentElement.lang}})})})();
