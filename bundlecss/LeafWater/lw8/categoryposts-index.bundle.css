@@ -1,0 +1,1 @@
+.lw-news__lede{margin:0 0 var(--lw-sp-6)}.lw-news__featured{margin-bottom:var(--lw-sp-7)}.lw-news__grid{display:grid;gap:var(--lw-sp-5);grid-template-columns:repeat(2,minmax(0,1fr))}@container (min-width: 48rem){.lw-news__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (max-width:603px){.lw-news__grid{grid-template-columns:minmax(0,1fr)}}
