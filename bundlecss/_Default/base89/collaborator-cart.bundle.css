@@ -1,0 +1,1 @@
+[data-main]{height:100%}[data-main] [data-product-infoes]{height:calc(100vh - 158px)}[data-main] [data-product-name]{font-size:1.2rem}#frmOrderInfo{margin-top:-20px}@media only screen and (min-width:768px){._id-order-row [data-product-infores] ul{display:flex}._id-order-row [data-product-infores] ul li{flex-basis:25%}}
